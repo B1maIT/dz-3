@@ -1,0 +1,34 @@
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,300px);
+    grid-template-areas: 
+    "one one two" 
+    "three four four"
+    "three five six";
+    gap: 10px;
+}
+.one{
+    grid-area:one;
+    background-color: lightgreen;
+}
+.two{
+    grid-area:two;
+    background-color: yellow;
+}
+.three{
+    grid-area:three;
+    background-color: aqua;
+}
+.four{
+    grid-area:four;
+    background-color: palevioletred;
+}
+.five{
+    grid-area:five;
+    background-color: aquamarine;
+}
+.six{
+    grid-area:six;
+    background-color: orangered;
+}
